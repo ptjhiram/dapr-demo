@@ -1,0 +1,11 @@
+### Get state data
+GET http://localhost:5228/state/key1
+
+### Set state data
+POST http://localhost:5228/state
+Content-Type: application/json
+
+{
+    "key": "key1",
+    "data": "my state data"
+}
