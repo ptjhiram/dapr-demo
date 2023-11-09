@@ -3,6 +3,8 @@ kind: Component
 metadata:
   name: statestore
 spec:
-  type: state.in-memory
+  type: state.mongodb
   version: v1
-  metadata: []
+  metadata:
+  - name: host
+    value: 127.0.0.1:27017
